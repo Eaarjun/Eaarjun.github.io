@@ -71,6 +71,88 @@ label #cancel{
 #check{
     display: none;
 }
+/*entry animation still on working*/
+.fade-in {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	opacity: 0.00;
+	-webkit-transition: 5s all ease-in-out;
+	-moz-transition: 5s all ease-in-out;
+	-o-transition: 5s all ease-in-out;
+	transition: 5s all ease-in-out;
+}
+
+.fade-in.active {
+	opacity: 1.00;
+}
+.h1{
+    text-align: center;
+    margin: 50px 80px;
+    height: 50px;
+}
+@media screen and (max-width: 944px) {
+    .h1 {
+      width: 20%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 860px) {
+    .h1 {
+      width: 70%;
+    padding-top: 70px;
+    }
+  }
+
+/*--------------------entry animation send-=------------------/
+
+/*Rows,columns and content*/
+.row{
+    margin: 10px 10px;
+}
+.hr{
+    margin: 20px 10px;
+    
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding-left: 100px;
+  }
+  /* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Content */
+.content {
+    background-color:  #f1f1f1;
+    padding: 15px;
+  }
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 944px) {
+    .column {
+      width: 20%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 860px) {
+    .column {
+      width: 70%;
+    padding-top: 70px;
+    }
+  }
+
+
+/*------------------Rows,columns and content end------------------*/
+
+
 @media (max-width:944px){
     nav img{
         left: 1%;
@@ -80,6 +162,11 @@ label #cancel{
     nav ul li a{
         font-size: 17px;
     }
+    video{
+        width: 100%;
+        height: auto;
+    }
+   
    
 }
 @media (max-width:860px){
