@@ -88,7 +88,7 @@ label #cancel{
 }
 .h1{
     text-align: center;
-    margin: 50px 80px;
+    margin: 5px 80px;
     height: 50px;
 }
 @media screen and (max-width: 944px) {
@@ -144,15 +144,17 @@ label #cancel{
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 860px) {
     .column {
-      width: 70%;
+    width: 70%;
     padding-top: 70px;
+    padding-left: 70px;
     }
+  }
+  .contenttitle{
+    text-align: center;
   }
 
 
 /*------------------Rows,columns and content end------------------*/
-
-
 @media (max-width:944px){
     nav img{
         left: 1%;
@@ -181,7 +183,7 @@ label #cancel{
             position: fixed;
             width: 100%;
             height: 100vh;
-            background:rgb(62, 106, 187);
+            background:grey;
             top: 80px;
             left: -100%;
             text-align: center;
@@ -208,4 +210,122 @@ label #cancel{
         width: 100%;
         height: auto;
     }
+}
+
+
+
+/*--------------------------------section gif---------------------------------------------*/
+.gifimage{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   font-size: 30px;
+   word-break: break-all;
+}
+@media (max-width:860px){
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 70px;
+   font-size: 10px;
+   word-break: break-all;
+   font-family: Arial;
+}
+}
+
+/*------photography showcase--------*/
+.showcase{
+    height: 100vh;
+}
+
+.rows{
+    margin: 90px 100px;
+    padding-left: 250px;
+}
+
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column2{
+    float: left;
+    width: 25%;
+    padding-left: 5px;
+}
+.content2{
+    background-color: white;
+    padding: 15px;
+  }
+ 
+  .meghnanadkaran{
+    height: 500px;
+    width: fit-content;
+  }
+
+  .zinaandzain{
+    height: 500px;
+}
+
+.btncolumn{
+    float: left;
+    width: 25%;
+    padding-left: 5px;
+    margin: 0;
+}
+.btmimg{
+    height: 400px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 944px) {
+    .column2 {
+     height: auto;
+        width: 20%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 860px) {
+    .column2 {
+    width: 70%;
+    padding-top: 70px;
+    padding-left: 70px;
+    }
+    .content2{
+        height: auto;
+        width: 1000%;
+        margin-left:-340px;
+    }
+    .meghnanadkaran{
+        height: 450px;
+        width: auto;
+    }
+    .zinaandzain{
+        height: 450px;
+        width: auto;
+    }
+    .btncolumn{
+        width: 70%;
+    padding-top: 10px;
+    padding-left: 70px; 
+    }
+  }
+/*Ultimates*/
+.ultimates{
+    height: 20vh;
 }
